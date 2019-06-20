@@ -1,0 +1,48 @@
+#videoBG{
+  position:absolute;
+    z-index: -1;
+    filter:brightness(0.6);
+    transition: 1s opacity;
+    margin:8vh;
+}
+
+#logoPrincipal{
+  filter:opacity(85%);
+  width: 20%;
+
+  display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+
+}
+
+#menu{
+  width: 15vh;
+  height: 30vh;
+  position: fixed;
+  background-color: #FBFBF2;
+  margin-top: 18%;
+  margin-bottom: auto;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:93%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 93%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background-size: cover;
+    }
+}
