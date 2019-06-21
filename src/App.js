@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.css';
 
 import Inicio from './components/inicio.js';
 function App() {
   return (
-    <div >
+    <div id='contenedor' >
       <Inicio/>
     </div>
   );
