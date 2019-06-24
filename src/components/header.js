@@ -50,7 +50,7 @@ handleItemClick () {
             <Icon onClick={this.handleStateChange} id={MenuButton}>add</Icon>
 
             :
-            <Icon onClick={this.handleStateChange} id={MenuButton}>dehaze</Icon>
+            <Icon id='burger'onClick={this.handleStateChange} id={MenuButton}>dehaze</Icon>
 
           }
           <div id={ContentMenu}>
@@ -61,16 +61,15 @@ handleItemClick () {
           </div>
           <div id={displayDatos}>
               <div className="box Ubicacion">
-                <h5>Ubicacion</h5>
-              <a><p>Obsidiana #2424 Zapopan</p></a>
+                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Ubicación</h5>
+              <p>Zapopan, Jalisco, MX</p>
               </div>
               <div className="box Cotizaciones">
-                <h5>Cotizaciones</h5>
-                <p>Adan De Santiago</p>
-                <p>adan1995a@kodika.com</p>
+                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}} >Contrátanos</h5>
+                <p>contact@kodika.mx</p>
               </div>
-              <div className="box Redes">
-                <h5>Redes Sociales</h5>
+              <div className="box Redes" >
+                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Redes Sociales</h5>
                 <p>Facebook</p>
                 <p>Twitter</p>
                 <p>Instagram</p>
@@ -78,9 +77,8 @@ handleItemClick () {
                 <p>Linkedin</p>
               </div>
               <div className="box Equipo">
-                <h5>Se parte de nuestro equipo</h5>
-                <p>Emmanuel Garcia</p>
-                <p>emgarcia24@kodika.com</p>
+                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
+                <p>hiring@kodika.mx </p>
               </div>
           </div>
         </div>
