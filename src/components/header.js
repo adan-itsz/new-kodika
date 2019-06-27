@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../style/header.css';
 import Icon from '@material-ui/core/Icon';
+import {Link} from 'react-router-dom'
 
 class Header extends Component{
   constructor (props) {
@@ -44,6 +45,7 @@ handleItemClick () {
           </div>
         </div>
       </div>
+
         <div onClick={this.handleStateChange} id={menuVis}>
           <img id={displayImg} src='../imagenes/insignia.png' />
           {this.state.menuOpen?
@@ -54,10 +56,10 @@ handleItemClick () {
 
           }
           <div id={ContentMenu}>
-          <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="#encabezado">Home</a>
-          <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#seccion-nosotros"> Nosotros</a>
-          <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="#seccion-funciona">Servicios</a>
-          <a onClick={() => this.handleItemClick()} className="menu-item--small" href="#seccion-registro">Comienza</a>
+          <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
+          <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+          <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
+
           </div>
           <div id={displayDatos}>
               <div className="box Ubicacion">
@@ -84,6 +86,7 @@ handleItemClick () {
         </div>
         <img src='../imagenes/logo1.png' id='logoPrincipal' style={{position:'relative'}}/>
       </div>
+
 
     </div>
   )};

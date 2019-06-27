@@ -23,7 +23,7 @@
 #menu{
   width: 15vh;
   height: 30vh;
-  position: absolute;
+  position: fixed;
   background-color: #FBFBF2;
   margin-top: 18%;
   margin-bottom: auto;
@@ -208,7 +208,7 @@
 
 }
 
-#ContentMenuActive a{
+#ContentMenuActive a {
   text-decoration: none;
   font-family: 'Playfair Display', serif;
   font-size: 230%;

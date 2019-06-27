@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import Header2 from './header.js';
 import Nosotros from './nosotros.js';
 import Acerca from './acerca.js';
-import * as PIXI from 'pixi.js';
 import { Grid, Image,Icon,Header } from 'semantic-ui-react'
-
+import Depth from './depthMap.js';
 class Inicio extends Component{
   constructor (props) {
   super(props)
   this.state = {
   }
-  this.animate = this.animate.bind(this);
 }
 
   componentDidMount(){
@@ -27,7 +25,7 @@ class Inicio extends Component{
         <Grid>
           <Grid.Row>
             <Grid.Column width={7}>
-            <div id='imagenEffect'></div>
+              <img  style={{width:'90%'}}src='https://images.pexels.com/photos/2378544/pexels-photo-2378544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'/>
             </Grid.Column>
             <Grid.Column width={8} style={{ display: 'flex',alignItems: 'start'}}>
 
@@ -48,9 +46,7 @@ class Inicio extends Component{
             </Grid.Column>
         </Grid.Row>
       </Grid>
-
       </div>
-
     </div>
   )};
 }
