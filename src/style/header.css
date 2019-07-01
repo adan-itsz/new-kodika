@@ -23,7 +23,7 @@
 #menu{
   width: 15vh;
   height: 30vh;
-  position: fixed;
+  position: absolute;
   background-color: #FBFBF2;
   margin-top: 18%;
   margin-bottom: auto;

@@ -1,0 +1,74 @@
+.ImgFondo{
+  position: absolute;
+  width: 101%;
+  height: 200%;
+}
+
+
+.ImgFrente{
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 200%;
+  z-index:1;
+  left: 0;
+}
+
+.contentText{
+  z-index: 2;
+
+}
+.slideFondo{
+  animation-name: slideFondo;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  animation-duration: 4s;
+  z-index:1;
+
+}
+
+.slideFrente{
+  animation-name: slideIzquierda;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  animation-duration: 25s;
+  z-index:1;
+  transform: translateX(140%);
+
+}
+
+@keyframes slideIzquierda {
+  0%{
+    transform: translateX(0);
+  }
+  10%{
+    transform: translateX(140%);
+
+  }
+
+
+}
+
+@keyframes slideFondo {
+  0%{
+    transform: translateX(0);
+
+  }
+  30%{
+    transform: translateX(-30px);
+
+  }
+  60%{
+
+    transform: translateX(0px);
+
+  }
+}
+
+#iconos{
+  top:160%;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  color:#776C10;
+
+}
