@@ -4,6 +4,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import Header from './header.js';
 import Icon from '@material-ui/core/Icon';
+import '../style/nosotros.css';
 
 const SectionWipes2Styled = styled.div`
   overflow: hidden;
@@ -25,20 +26,24 @@ const SectionWipes2Styled = styled.div`
     font-size: 80px;
   }
 
+  .panel.one {
+    background-color: #0000;
+  }
   .panel.blue {
-    background-color: #FF6A5C;
+    background-color: #0388A6;
   }
 
   .panel.turqoise {
-    background-color: #F2D388;
+
+    background-color: #F2C36B;
   }
 
   .panel.green {
-    background-color: #CCDFCB;
+    background-color: #F2DCC2;
   }
 
   .panel.bordeaux {
-    background-color: #776C10;
+    background-color: #04ADBF;
   }
 `;
 
@@ -63,99 +68,59 @@ class Work extends Component{
   }
 
   render(){
-    const menuVis = this.state.menuOpen ? 'menuActive' : 'menu';
-    const displayImg = this.state.menuOpen ? 'imgMenuActive' : 'imgMenu';
-    const MenuButton = this.state.menuOpen ? 'MenuButtonActive' : 'MenuButton';
-    const ContentMenu = this.state.menuOpen ? 'ContentMenuActive' : 'ContentMenu';
-    const displayDatos = this.state.menuOpen ? 'DatosActive' : 'Datos';
+
     return(
 
-      <div>
-        <div style={{width:'2vh'}}></div>
-        <div onClick={this.handleStateChange} id={menuVis}>
-          <img id={displayImg} src='../imagenes/insignia.png' />
-          {this.state.menuOpen?
-            <Icon onClick={this.handleStateChange} id={MenuButton}>add</Icon>
+      <React.Fragment>
+      <div style={{marginTop:'30%'}}>
+      <SectionWipes2Styled>
+        <Controller>
+          <Scene
+            triggerHook="onLeave"
+            duration="300%"
+            pin
+          >
+            <Timeline
+              wrapper={<div id="pinContainer" />}
+            >
+            <section className="panel one"><img  style={{width:'60%'}}/>
+              <p className="textEmpezar">¿Como empezar?</p>
+            </section>
+              <Tween
+                from={{ y: '100%' }}
+                to={{ y: '0%' }}
+              >
+                <section className="panel blue"><img  style={{width:'60%'}}src='./imagenes/entrevista.svg'/><p>Entrevista</p></section>
+              </Tween>
+              <Tween
+                from={{ x: '-100%' }}
+                to={{ x: '0%' }}
+              >
+                <section className="panel turqoise"><img  style={{width:'60%'}}src='./imagenes/prototipo.svg'/><p>Prototipo o Mockup</p></section>
+              </Tween>
+              <Tween
+                from={{ x: '100%' }}
+                to={{ x: '0%' }}
+              >
+              <section className="panel green"><img  style={{width:'60%'}}src='./imagenes/coding.svg'/><p>Codear</p></section>
 
-            :
-            <Icon id='burger'onClick={this.handleStateChange} id={MenuButton}>dehaze</Icon>
-
-          }
-          <div id={ContentMenu}>
-          <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-          <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
-          <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
-
-          </div>
-          <div id={displayDatos}>
-              <div className="box Ubicacion">
-                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Ubicación</h5>
-              <p>Zapopan, Jalisco, MX</p>
-              </div>
-              <div className="box Cotizaciones">
-                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}} >Contrátanos</h5>
-                <p>contact@kodika.mx</p>
-              </div>
-              <div className="box Redes" >
-                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Redes Sociales</h5>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Instagram</p>
-                <p>Github</p>
-                <p>Linkedin</p>
-              </div>
-              <div className="box Equipo">
-                <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
-                <p>hiring@kodika.mx </p>
-              </div>
-          </div>
-        </div>
-        <SectionWipes2/>
+              </Tween>
+              <Tween
+                from={{ y: '-100%' }}
+                to={{ y: '0%' }}
+              >
+              <section className="panel bordeaux"><img  style={{width:'60%'}}src='./imagenes/exitoso.svg'/><p>entrega a produccion</p></section>
+              </Tween>
+            </Timeline>
+          </Scene>
+        </Controller>
+      </SectionWipes2Styled>
       </div>
+
+      </React.Fragment>
     )
   }
 }
 
-
-const SectionWipes2 = () => (
-  <React.Fragment>
-  <div>
-  <SectionWipes2Styled>
-    <Controller>
-      <Scene
-        triggerHook="onLeave"
-        duration="300%"
-        pin
-      >
-        <Timeline
-          wrapper={<div id="pinContainer" />}
-        >
-          <section className="panel blue"><span>Panel azul</span></section>
-          <Tween
-            from={{ x: '-100%' }}
-            to={{ x: '0%' }}
-          >
-            <section className="panel turqoise"><img  style={{width:'60%'}}src='./imagenes/prototipo.svg'/></section>
-          </Tween>
-          <Tween
-            from={{ x: '100%' }}
-            to={{ x: '0%' }}
-          >
-            <section className="panel green"><span>Panel</span></section>
-          </Tween>
-          <Tween
-            from={{ y: '-100%' }}
-            to={{ y: '0%' }}
-          >
-            <section className="panel bordeaux"><span>Panel bou</span></section>
-          </Tween>
-        </Timeline>
-      </Scene>
-    </Controller>
-  </SectionWipes2Styled>
-  </div>
-
-  </React.Fragment>
-);
 
 export default Work;

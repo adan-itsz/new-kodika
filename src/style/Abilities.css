@@ -1,0 +1,128 @@
+.ImgFondo{
+  position: absolute;
+  width: 191%;
+  height: 230%;
+}
+.ImgChica{
+  position: absolute;
+  width: 110%;
+  height: 210%;
+  z-index: 3;
+  top: 13%;
+  left: 35%;
+}
+
+
+.ImgFrente{
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 230%;
+  z-index:1;
+  left:300%;
+}
+
+.contentText{
+  z-index: 2;
+transform: translateX(130%);
+}
+
+
+.slideFondo{
+  animation-name: slideFondo;
+  animation-timing-function: ease-out;
+  animation-duration: 1.5s;
+  z-index:3;
+  transform: translateX(-30%);
+
+}
+
+.slideFrente{
+  animation-name: slideIzquierda;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  z-index:1;
+  transform: translateX(-163.2%);
+
+}
+
+@keyframes slideIzquierda {
+  0%{
+    transform: translateX(200%);
+  }
+  50%{
+    transform: translateX(-163.2%);
+
+  }
+
+
+}
+
+@keyframes slideFondo {
+  0%{
+    transform: translateX(0);
+
+  }
+  60%{
+    transform: translateX(0);
+
+  }
+  100%{
+    transform: translateX(-30%);
+
+  }
+}
+
+#iconos{
+  top:160%;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  color:#776C10;
+
+}
+
+
+.nosotros-texto{
+    font-family: 'Playfair Display', serif;
+    color:#1D1D1D;
+    text-align: center;
+    padding: 4vh;
+    font-size: 4vh;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: auto;
+    margin-top: auto;
+
+}
+
+.nosotros-textoSlide{
+  transform: translateX(0%);
+  animation-name: slideIzquierdaTexto;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+}
+
+@keyframes slideIzquierdaTexto {
+  0%{
+    opacity: 0;
+    transform: translateX(130%);
+  }
+  5%{
+    opacity: 0;
+
+  }
+  8%{
+    opacity: 1;
+    transform: translateX(0%);
+
+  }
+
+
+}
+
+#iconos Header{
+font-size:
+
+}

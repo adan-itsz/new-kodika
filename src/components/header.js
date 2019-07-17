@@ -15,6 +15,19 @@ class Header extends Component{
 }
 
 handleStateChange () {
+  var elementMenu = document.getElementById('menuAnimation');
+
+  if (!this.state.menuOpen) {
+    elementMenu.classList.remove('menuStatic');
+    elementMenu.classList.remove('menu');
+    elementMenu.classList.add('menuActive');
+  }else {
+
+    elementMenu.classList.remove('menuStatic');
+    elementMenu.classList.remove('menuActive');
+    elementMenu.classList.add('menu');
+  }
+
   this.setState({menuOpen: !this.state.menuOpen})
 }
 
@@ -24,7 +37,6 @@ handleItemClick () {
 
   render(){
 
-    const menuVis = this.state.menuOpen ? 'menuActive' : 'menu';
     const displayImg = this.state.menuOpen ? 'imgMenuActive' : 'imgMenu';
     const MenuButton = this.state.menuOpen ? 'MenuButtonActive' : 'MenuButton';
     const ContentMenu = this.state.menuOpen ? 'ContentMenuActive' : 'ContentMenu';
@@ -46,7 +58,7 @@ handleItemClick () {
         </div>
       </div>
 
-        <div onClick={this.handleStateChange} id={menuVis}>
+        <div onClick={this.handleStateChange} id="menuAnimation" className='menuStatic'>
           <img id={displayImg} src='../imagenes/insignia.png' />
           {this.state.menuOpen?
             <Icon onClick={this.handleStateChange} id={MenuButton}>add</Icon>
