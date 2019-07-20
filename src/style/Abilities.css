@@ -1,14 +1,14 @@
 .ImgFondo{
   position: absolute;
-  width: 191%;
-  height: 230%;
+  width: 150%;
+  height: 180%;
 }
 .ImgChica{
   position: absolute;
   width: 110%;
-  height: 210%;
+  height: 150%;
   z-index: 3;
-  top: 13%;
+  top: 23%;
   left: 35%;
 }
 
@@ -16,8 +16,8 @@
 .ImgFrente{
   position: absolute;
   background-color: white;
-  width: 100%;
-  height: 230%;
+  width: 150%;
+  height: 180%;
   z-index:1;
   left:300%;
 }
@@ -74,7 +74,7 @@ transform: translateX(130%);
 }
 
 #iconos{
-  top:160%;
+  top:150%;
   position: absolute;
   margin-right: auto;
   margin-left: auto;
@@ -85,6 +85,7 @@ transform: translateX(130%);
 
 
 .nosotros-texto{
+
     font-family: 'Playfair Display', serif;
     color:#1D1D1D;
     text-align: center;
@@ -125,4 +126,207 @@ transform: translateX(130%);
 #iconos Header{
 font-size:
 
+}
+
+
+@media (max-width: 580px)  {
+  .ImgFondo{
+    display:none;
+
+  }
+  .ImgChica{
+    display:none;
+  }
+
+  .ImgFrente{
+    display:none;
+
+  }
+  .circulo{
+    width: 100%;
+    padding-top: 10vh;
+  }
+  #iconos{
+    top:90%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 3vh;
+      width: 100%;
+  }
+}
+
+@media (max-width: 939px)and (min-width: 581px)  {
+  .ImgFondo{
+    display:none;
+
+  }
+  .ImgChica{
+    display:none;
+  }
+
+  .ImgFrente{
+    display:none;
+
+  }
+  .circulo{
+    width: 100%;
+    padding-top: 12vh;
+  }
+  #iconos{
+    top:90%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+}
+@media (max-width: 1050px)and (min-width: 940px)  {
+  .ImgFondo{
+    position: absolute;
+    width: 120%;
+    height: 40%;
+  }
+  .ImgChica{
+    position: absolute;
+    width: 84%;
+    height: 40%;
+    z-index: 3;
+    top: 90%;
+    left: 40%;
+  }
+
+
+  .ImgFrente{
+    position: absolute;
+    background-color: white;
+    width: 120%;
+    height: 40%;
+    z-index:1;
+
+  }
+  #iconos{
+    top:90%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+  .slideFrente{
+    animation-name: slideIzquierda;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    z-index:1;
+    transform: translateX(-169.2%);
+
+  }
+}
+@media (max-width: 1200px)and (min-width: 1051px)  {
+  .ImgFondo{
+    position: absolute;
+    width: 120%;
+    height: 40%;
+  }
+  .ImgChica{
+    position: absolute;
+    width: 79%;
+    height: 40%;
+    z-index: 3;
+    top: 90%;
+    left: 40%;
+  }
+
+
+  .ImgFrente{
+    position: absolute;
+    background-color: white;
+    width: 120%;
+    height: 40%;
+    z-index:1;
+
+  }
+  #iconos{
+    top:90%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+  .slideFrente{
+    animation-name: slideIzquierda;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    z-index:1;
+    transform: translateX(-169.2%);
+
+  }
+}
+@media (max-width: 1350px)and (min-width: 1201px)  {
+  .ImgFondo{
+    position: absolute;
+    width: 150%;
+    height: 180%;
+  }
+  .ImgChica{
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    z-index: 3;
+    top: 23%;
+    left: 35%;
+  }
+
+
+  .ImgFrente{
+    position: absolute;
+    background-color: white;
+    width: 150%;
+    height: 180%;
+    z-index:1;
+    left:300%;
+  }
+  #iconos{
+    top:120%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+  .slideFrente{
+    animation-name: slideIzquierda;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    z-index:1;
+    transform: translateX(-169.2%);
+
+  }
 }

@@ -21,11 +21,11 @@
 }
 
 .menu{
-  width: 15vh;
-  height: 30vh;
+  width: 12vh;
+  height: 23vh;
   position: fixed;
   background-color: #FBFBF2;
-  margin-top: 18%;
+  margin-top: 20%;
   margin-bottom: auto;
   animation: MenuslideCloset .6s ease-in-out 0s;
   z-index: 100;
@@ -33,11 +33,11 @@
 
 
 .menuStatic{
-  width: 15vh;
-  height: 30vh;
+  width: 12vh;
+  height: 23vh;
   position: fixed;
   background-color: #FBFBF2;
-  margin-top: 18%;
+  margin-top: 20%;
   margin-bottom: auto;
   z-index: 100;
 }
@@ -217,7 +217,6 @@
   margin-top: 10%;
   margin-left: -10%;
   animation: ContentActiveSlide 1.4s ease-in-out 0s;
-
 }
 
 #ContentMenuActive a {
@@ -254,11 +253,11 @@
   display: grid;
   font-family: 'Playfair Display', serif;
   color: #CAC8C8;
-   grid-gap: 20%;
+   grid-gap: 10%;
    grid-row-gap: 5%;
        grid-template-columns: 40% 40% ;
   position: absolute;
-  left: 50%;
+  left: 40%;
   top: 5%;
   opacity: 1;
   font-size: 2.5vh;
@@ -326,20 +325,98 @@
 }
 @media (max-aspect-ratio: 16/9) {
     #videoBG {
-      width:auto;
-        height: 93%;
+      width:100%;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     #videoBG {
-      display: none
+      width:100%;
+      margin-left: 0;
+      margin-right: 0;
     }
     body {
         background-size: cover;
     }
+    .scroll-downs {
+      display:none;
+    }
+
+    .Ubicacion {
+         grid-area: 1 / 0 / 0 / 0;
+         font-family: 'Playfair Display', serif;
+         font-size: 3vh;
+     }
+   .Cotizaciones {
+         grid-area: 3 / 1 / 3 / 3;
+         font-family: 'Playfair Display', serif;
+          font-size: 3vh;
+     }
+     .Redes {
+         grid-area: 2 / 1 / 3 / 2;
+         font-family: 'Playfair Display', serif;
+          font-size: 3vh;
+     }
+     .Equipo {
+         grid-area: 4 / 2 / 1 / 2;
+         font-family: 'Playfair Display', serif;
+          font-size: 3vh;
+     }
+     #DatosActive{
+       display: block;
+     }
 }
 
+@media (max-width: 819px)and (min-width: 290px) {
+  .Ubicacion {
+       grid-area: 1 / 1 / 2 / 2;
+       font-family: 'Playfair Display', serif;
 
+   }
+ .Cotizaciones {
+       grid-area: 1 / 2 / 2 / 3;
+       font-family: 'Playfair Display', serif;
+
+   }
+   .Redes {
+       grid-area: 2 / 1 / 3 / 2;
+       font-family: 'Playfair Display', serif;
+
+   }
+   .Equipo {
+       grid-area: 2 / 2 / 3 / 3;
+       font-family: 'Playfair Display', serif;
+
+   }
+   #DatosActive{
+     display: grid;
+     font-family: 'Playfair Display', serif;
+     color: #CAC8C8;
+      grid-gap: 2%;
+      grid-row-gap: 0%;
+          grid-template-columns: 35% 35% ;
+     position: absolute;
+     left: 10%;
+     top: 40%;
+
+   }
+   #ContentMenuActive{
+     display:grid;
+     width: 100%;
+     text-align: center;
+     margin-top: 10%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+   #ContentMenuActive a {
+     font-size: 230%;
+     padding: 2% ;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+
+   }
+}
 
 
 /*Mouse scroll animation*/

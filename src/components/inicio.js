@@ -26,7 +26,6 @@ class Inicio extends Component{
       <div style={{height:'165vh'}}>
         <Acerca/>
         <Abilities/>
-        <Nosotros/>
       </div>
     </div>
   </div>

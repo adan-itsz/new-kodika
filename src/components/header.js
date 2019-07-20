@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../style/header.css';
 import Icon from '@material-ui/core/Icon';
+import {Responsive,Segment } from 'semantic-ui-react'
+
 import {Link} from 'react-router-dom'
 
 class Header extends Component{
@@ -49,7 +51,8 @@ handleItemClick () {
 
       <div>
         <video id="videoBG" autoPlay muted loop playsinline>
-            <source src="../imagenes/kodika.mp4" type="video/mp4"/>
+
+            <source src="../imagenes/kodika.webm" type="video/webm"/>
         </video>
         <div className="scroll-downs">
           <div className="mousey">
@@ -67,6 +70,7 @@ handleItemClick () {
             <Icon id='burger'onClick={this.handleStateChange} id={MenuButton}>dehaze</Icon>
 
           }
+      <Responsive  minWidth={1000}>
           <div id={ContentMenu}>
           <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
           <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
@@ -95,7 +99,72 @@ handleItemClick () {
                 <p>hiring@kodika.mx </p>
               </div>
           </div>
+      </Responsive>
+
+      <Responsive  minWidth={820} maxWidth={999}>
+      <div id={ContentMenu}>
+      <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
+      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+      <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
+
+      </div>
+      <div id={displayDatos}>
+
+          <div className="box Ubicacion">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Ubicación</h5>
+          <p>Zapopan, Jalisco, MX</p>
+          </div>
+          <div className="box Cotizaciones">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}} >Contrátanos</h5>
+            <p>contact@kodika.mx</p>
+          </div>
+          <div className="box Redes" >
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Redes Sociales</h5>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>Github</p>
+            <p>Linkedin</p>
+          </div>
+          <div className="box Equipo">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
+            <p>hiring@kodika.mx </p>
+          </div>
+      </div>
+      </Responsive>
+
+      <Responsive  minWidth={290} maxWidth={819}>
+      <div id={ContentMenu}>
+      <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
+      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+      <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="#">Nuestro trabajo</a>
+      </div>
+      <div id={displayDatos}>
+
+          <div className="box Ubicacion">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Ubicación</h5>
+          <p>Zapopan, Jalisco, MX</p>
+          </div>
+          <div className="box Cotizaciones">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}} >Contrátanos</h5>
+            <p>contact@kodika.mx</p>
+          </div>
+          <div className="box Redes" >
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Redes Sociales</h5>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>Github</p>
+            <p>Linkedin</p>
+          </div>
+          <div className="box Equipo">
+            <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100',width:'100%'}}>Forma parte de nuestro equipo</h5>
+            <p>hiring@kodika.mx </p>
+          </div>
+      </div>
+      </Responsive>
         </div>
+
         <img src='../imagenes/logo1.png' id='logoPrincipal' style={{position:'relative'}}/>
       </div>
 
