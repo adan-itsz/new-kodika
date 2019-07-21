@@ -23,6 +23,7 @@ componentDidMount(){
 var elementHeight = elementFrente[0].clientHeight;
 
 // listen for scroll event and call animate function
+document.addEventListener('touchmove', animate);
 document.addEventListener('scroll', animate);
 
 // check if element is in view

@@ -255,7 +255,7 @@
           .fadeEncabezado2{
 
             padding-left: 10vh;
-            margin-top: 60vh;
+            margin-top: 53vh;
             margin-right: auto;
             color:#776C10;
             background-color: rgba(255, 255, 255, .6);
@@ -390,3 +390,68 @@
                         animation-duration: 3s;
             }
         }
+
+@media (min-width: 412px)and (max-width: 734px)and (orientation: landscape){
+  .encabezado{
+    font-size: 6vh;
+  }
+  .boxDer{
+    margin-top: 5vh;
+    margin-right: 0;
+  }
+  #grid-card{
+    width: 80%
+  }
+
+  .fadeEncabezado{
+    padding: 4vh;
+    margin-top: 58vh;
+    font-size: 10vh;
+  }
+  .fadeEncabezado2{
+
+    padding-left: 48vh;
+    margin-top: 78vh;
+    margin-right: auto;
+    color:#776C10;
+    background-color: rgba(255, 255, 255, .6);
+    font-size: 5vh;
+    font-family: 'Playfair Display', serif;
+    animation-name: fadeEncabezado2-Izq;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 3s;
+
+  }
+}
+@media (min-width: 735px)and (max-width: 1300px)and (orientation: landscape){
+  .encabezado{
+    font-size: 6vh;
+  }
+  .boxDer{
+    margin-top: 5vh;
+    margin-right: 0;
+  }
+  #grid-card{
+    width: 80%
+  }
+
+  .fadeEncabezado{
+    padding: 4vh;
+    margin-top: 50vh;
+    font-size: 10vh;
+  }
+  .fadeEncabezado2{
+
+    padding-left: 56vh;
+    margin-top: 70vh;
+    margin-right: auto;
+    color:#776C10;
+    background-color: rgba(255, 255, 255, .6);
+    font-size: 5vh;
+    font-family: 'Playfair Display', serif;
+    animation-name: fadeEncabezado2-Izq;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 3s;
+
+  }
+}
