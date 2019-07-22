@@ -26,10 +26,15 @@ class Inicio extends Component{
       <div style={{height:'165vh'}}>
         <Acerca/>
         <Abilities/>
+
       </div>
+
     </div>
   </div>
   )};
 }
+
+
+
 
 export default Inicio;

@@ -23,8 +23,9 @@ componentDidMount(){
 var elementHeight = elementFrente[0].clientHeight;
 
 // listen for scroll event and call animate function
-document.addEventListener('touchmove', animate);
 document.addEventListener('scroll', animate);
+document.addEventListener('touchmove', animate);
+
 
 // check if element is in view
 function inView() {
@@ -193,8 +194,12 @@ function animate() {
       </React.Fragment>
     </React.Fragment >
      </Responsive>
+    
   </div>
   )};
 }
+
+
+
 
 export default Abilities;

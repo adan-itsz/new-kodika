@@ -50,9 +50,10 @@ handleItemClick () {
       <div style={{position:'relative'}}>
 
       <div>
-        <video id="videoBG" autoPlay muted loop playsinline>
+        <video id="videoBG" autoPlay muted loop playsinline poster='../imagenes/perro.jpg'>
 
             <source src="../imagenes/kodika.webm" type="video/webm"/>
+            <source src="../imagenes/kodika-mp4.mp4" type="video/mp4"/>
         </video>
         <div className="scroll-downs">
           <div className="mousey">
