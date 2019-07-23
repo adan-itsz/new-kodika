@@ -1,5 +1,82 @@
-.textEmpezar{
-  font-size: 9em;
-  font-weight: 900;
-  margin-top: 10%;
+
+#analisis{
+  background-image: url('../img/analisis.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#prototipado{
+  background-image: url('../img/proto.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#desarrollo{
+  background-image: url('../img/desarrollo1.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#testing{
+  background-image: url('../img/develop.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#deploy{
+  background-image: url('../img/deploy.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#integracion{
+  background-image: url('../img/integracion.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#analisis-img{
+  width: 100%!important;
+  margin-top: 10vh!important;
+}
+.imagenes-bajar{
+  padding-top: 12vh;
+}
+.encabezados{
+  margin-left: auto;
+  margin-top: 50vh;
+  position: absolute;
+  width:100%;
+  margin-right: auto;
+  text-align: center!important;
+  color:#1D1D1D;
+  font-size: 6vh;
+  font-family: 'Playfair Display', serif;
+  background-color: rgba(255, 255, 255, .9);
+}
+.descripciones{
+  margin-left: auto;
+  position: absolute;
+  width: 100%;
+  margin-top: 65vh;
+  margin-right: auto;
+  text-align: center!important;
+  color:#1D1D1D;
+  font-size: 3vh;
+  font-family: 'Playfair Display', serif;
+}
+
+.imagenesCirculo{
+  width: 100%;
+  max-width: 65vh;
+  position: relative;
+  margin: auto;
+  height: 90%
+}
+.imagenesCirculo img{
+  position: absolute;
+}
+.containerSection{
+  width:100vw!important;
 }

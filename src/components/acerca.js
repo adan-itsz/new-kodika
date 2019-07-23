@@ -89,4 +89,8 @@ function animate() {
   )};
 }
 
+
+
+
+
 export default Acerca;
