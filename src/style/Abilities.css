@@ -194,16 +194,17 @@ font-size:
 }
 @media (max-width: 1050px)and (min-width: 940px)  {
   .ImgFondo{
+    padding-top: 6vh;
     position: absolute;
     width: 120%;
     height: 40%;
   }
   .ImgChica{
     position: absolute;
-    width: 84%;
+    width: 70%;
     height: 40%;
     z-index: 3;
-    top: 90%;
+    top: 100%;
     left: 40%;
   }
 
@@ -227,7 +228,9 @@ font-size:
       padding-top: 8vh;
       padding-bottom: 8vh;
       font-size: 4vh;
-      width: 100%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
   }
   .slideFrente{
     animation-name: slideIzquierda;
@@ -240,16 +243,17 @@ font-size:
 }
 @media (max-width: 1200px)and (min-width: 1051px)  {
   .ImgFondo{
+    padding-top: 6vh;
     position: absolute;
     width: 120%;
     height: 40%;
   }
   .ImgChica{
     position: absolute;
-    width: 79%;
+    width: 70%;
     height: 40%;
     z-index: 3;
-    top: 90%;
+    top: 100%;
     left: 40%;
   }
 

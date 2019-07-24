@@ -38,8 +38,8 @@ class Work extends Component{
             <div className='imagenesCirculo'>
                 <img src='./imagenes/work/analisis.svg' id='analisis-img' style={{width:'100%',marginTop:'15vh'}}/>
                   <h1 className='encabezados'>Analisis</h1>
-                  <h2 className='descripciones'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+                  <h2 className='descripciones'>Trabajamos de la mano contigo para definir y planear la
+                  ejecución del proyecto.</h2>
             </div>
 
 
@@ -51,8 +51,8 @@ class Work extends Component{
               <img src='./imagenes/circulo-1.svg' style={{width:'100%'}}/>
               <img src='./imagenes/work/prototipado.svg' className='imagenes-bajar'/>
               <h1 className='encabezados'>Prototipado</h1>
-              <h2 className='descripciones'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+              <h2 className='descripciones'>El proyecto toma forma de wireframing para validar el futuro
+              resultado final.</h2>
             </div>
 
           </Section>
@@ -62,8 +62,8 @@ class Work extends Component{
             <div className='imagenesCirculo'>
               <img src='./imagenes/work/desarrollo.svg'/>
               <h1 className='encabezados' style={{backgroundColor:'rgba(234, 97, 0, 0.8)',color:'#ffffff'}}>Desarrollo</h1>
-              <h2 className='descripciones'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+              <h2 className='descripciones' style={{backgroundColor:'rgba(0, 0, 0, 0.4)',color:'#ffffff'}}>Es tiempo que el código haga su magia, en Kódika trabajamos para superar
+              las expectativas.</h2>
             </div>
           </Section>
 
@@ -73,8 +73,8 @@ class Work extends Component{
               <img src='./imagenes/circulo-1.svg' style={{width:'100%'}}/>
               <img src='./imagenes/work/testing.svg'/>
               <h1 className='encabezados'>Testing</h1>
-              <h2 className='descripciones'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+              <h2 className='descripciones'>Nos aseguramos que el proyecto no tenga fallos, mediante pruebas
+              exhaustivas.</h2>
             </div>
           </Section>
 
@@ -84,8 +84,8 @@ class Work extends Component{
               <img src='./imagenes/circulo-1.svg' style={{width:'100%'}}/>
               <img src='./imagenes/work/deploy.svg' />
               <h1 className='encabezados' style={{backgroundColor:'rgb(255, 79, 59,.8)',color:'#ffffff'}}>Puesta en producción</h1>
-              <h2 className='descripciones' style={{color:'#ffffff'}}>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+              <h2 className='descripciones' style={{color:'#ffffff'}}>Ponemos tu proyecto al alcance de quien quieras, es tiempo que el mundo
+              conozca tu idea. </h2>
             </div>
           </Section>
 
@@ -94,9 +94,9 @@ class Work extends Component{
             <div className='imagenesCirculo'>
               <img src='./imagenes/circulo-1.svg' style={{width:'100%',}}/>
               <img src='./imagenes/work/integracion.svg' className='imagenes-bajar'/>
-              <h1 className='encabezados'  style={{backgroundColor:'rgb(255, 66, 126,.8)',color:'#ffffff'}}>Integración continua</h1>
-              <h2 className='descripciones'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</h2>
+              <h1 className='encabezados'  style={{backgroundColor:'rgb(255, 66, 126,.8)',color:'#ffffff'}}>Desarrollo iterativo</h1>
+              <h2 className='descripciones'>Sabemos que las ideas no paran y las necesidades aumentan, por eso nos preparamos
+              para crecer tu proyecto.</h2>
             </div>
           </Section>
         </SectionsContainer>
@@ -159,7 +159,7 @@ handleItemClick () {
     <Responsive  minWidth={1000}>
       <div id={ContentMenu}>
       <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
       <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
 
       </div>
@@ -178,7 +178,6 @@ handleItemClick () {
             <p>Twitter</p>
             <p>Instagram</p>
             <p>Github</p>
-            <p>Linkedin</p>
           </div>
           <div className="box Equipo">
             <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
@@ -190,7 +189,7 @@ handleItemClick () {
     <Responsive  minWidth={820} maxWidth={999}>
     <div id={ContentMenu}>
     <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-    <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+    <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
     <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
 
     </div>
@@ -210,7 +209,6 @@ handleItemClick () {
         <p>Twitter</p>
         <p>Instagram</p>
         <p>Github</p>
-        <p>Linkedin</p>
       </div>
       <div className="box Equipo">
         <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
@@ -222,8 +220,8 @@ handleItemClick () {
     <Responsive  minWidth={290} maxWidth={819}>
     <div id={ContentMenu}>
     <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-    <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
-    <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="#">Nuestro trabajo</a>
+    <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
+    <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
     </div>
     <div id={displayDatos}>
 
@@ -241,7 +239,6 @@ handleItemClick () {
         <p>Twitter</p>
         <p>Instagram</p>
         <p>Github</p>
-        <p>Linkedin</p>
       </div>
       <div className="box Equipo">
         <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100',width:'100%'}}>Forma parte de nuestro equipo</h5>

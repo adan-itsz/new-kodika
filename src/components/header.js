@@ -74,7 +74,7 @@ handleItemClick () {
       <Responsive  minWidth={1000}>
           <div id={ContentMenu}>
           <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-          <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+          <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
           <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
 
           </div>
@@ -93,7 +93,6 @@ handleItemClick () {
                 <p>Twitter</p>
                 <p>Instagram</p>
                 <p>Github</p>
-                <p>Linkedin</p>
               </div>
               <div className="box Equipo">
                 <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
@@ -105,7 +104,7 @@ handleItemClick () {
       <Responsive  minWidth={820} maxWidth={999}>
       <div id={ContentMenu}>
       <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
+      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
       <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
 
       </div>
@@ -125,7 +124,6 @@ handleItemClick () {
             <p>Twitter</p>
             <p>Instagram</p>
             <p>Github</p>
-            <p>Linkedin</p>
           </div>
           <div className="box Equipo">
             <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100'}}>Forma parte de nuestro equipo</h5>
@@ -137,8 +135,8 @@ handleItemClick () {
       <Responsive  minWidth={290} maxWidth={819}>
       <div id={ContentMenu}>
       <a onClick={() => this.handleItemClick()} id="home"  className="menu-item" href="/">Home</a>
-      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="#"> Nosotros</a>
-      <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="#">Nuestro trabajo</a>
+      <a onClick={() => this.handleItemClick()} id="about" className="menu-item" href="/work"> Nosotros</a>
+      <a onClick={() => this.handleItemClick()} id="contact" className="menu-item" href="/work">Nuestro trabajo</a>
       </div>
       <div id={displayDatos}>
 
@@ -156,7 +154,6 @@ handleItemClick () {
             <p>Twitter</p>
             <p>Instagram</p>
             <p>Github</p>
-            <p>Linkedin</p>
           </div>
           <div className="box Equipo">
             <h5 style={{fontSize:'2vh',color:'#776C10',fontWeight:'100',width:'100%'}}>Forma parte de nuestro equipo</h5>
