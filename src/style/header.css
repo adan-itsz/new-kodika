@@ -366,7 +366,7 @@
      }
 }
 
-@media (max-width: 819px)and (min-width: 290px) {
+@media (max-width: 819px)and (min-width: 413px) {
   .Ubicacion {
        grid-area: 1 / 1 / 2 / 2;
        font-family: 'Playfair Display', serif;
@@ -417,7 +417,71 @@
 
    }
 }
+@media (max-width: 412px)and (min-width: 290px){
+  #videoBG{
+    position: absolute;
+    right: 0;
+    width: 210%;
+  }
+  #logoPrincipal{
+    filter:opacity(80%);
+    width: 30%;
+    display:block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30%;
 
+  }
+  .Ubicacion {
+       grid-area: 1 / 1 / 2 / 2;
+       font-family: 'Playfair Display', serif;
+
+   }
+ .Cotizaciones {
+       grid-area: 1 / 2 / 2 / 3;
+       font-family: 'Playfair Display', serif;
+
+   }
+   .Redes {
+       grid-area: 2 / 1 / 3 / 2;
+       font-family: 'Playfair Display', serif;
+
+   }
+   .Equipo {
+       grid-area: 2 / 2 / 3 / 3;
+       font-family: 'Playfair Display', serif;
+
+   }
+   #DatosActive{
+     display: grid;
+     font-family: 'Playfair Display', serif;
+     color: #CAC8C8;
+      grid-gap: 2%;
+      grid-row-gap: 0%;
+          grid-template-columns: 35% 35% ;
+     position: absolute;
+     left: 10%;
+     top: 40%;
+
+   }
+   #ContentMenuActive{
+     display:grid;
+     width: 100%;
+     text-align: center;
+     margin-top: 10%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+   #ContentMenuActive a {
+     font-size: 230%;
+     padding: 2% ;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+
+   }
+}
 
 /*Mouse scroll animation*/
 

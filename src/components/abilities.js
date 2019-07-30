@@ -103,7 +103,7 @@ function animate() {
      </Responsive>
 
 
-
+     
      <Responsive  minWidth={220} maxWidth={849}>
       <React.Fragment  styles={{marginTop:'5%'}} >
         <React.Fragment >
@@ -194,7 +194,7 @@ function animate() {
       </React.Fragment>
     </React.Fragment >
      </Responsive>
-    
+
   </div>
   )};
 }
