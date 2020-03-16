@@ -290,6 +290,52 @@ font-size:
 
   }
 }
+@media (min-width: 1435px)and(max-width: 1445px)and (min-height: 899)and (max-height:905)  {
+  .ImgFondo{
+    position: absolute;
+    width: 150%;
+    height: 180%;
+  }
+  .ImgChica{
+    position: absolute;
+    width: 120%;
+    height: 126%;
+    z-index: 3;
+    top: 32%;
+    left: 35%;
+  }
+
+
+  .ImgFrente{
+    position: absolute;
+    background-color: white;
+    width: 150%;
+    height: 180%;
+    z-index:1;
+    left:300%;
+  }
+  #iconos{
+    top:120%;
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros-texto{
+
+      padding: 3vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+  .slideFrente{
+    animation-name: slideIzquierda;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    z-index:1;
+    transform: translateX(-169.2%);
+
+  }
+}
 @media (max-width: 1350px)and (min-width: 1201px)  {
   .ImgFondo{
     position: absolute;

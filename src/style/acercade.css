@@ -402,6 +402,35 @@
                     animation-duration: 3s;
           }
       }
+@media (min-height: 1360px) and (max-height: 1370px) and (min-width: 1020px)and (max-width: 1030){
+        .encabezado{
+          font-size: 6vh;
+        }
+        .boxDer{
+          margin-top: 5vh;
+          margin-right: 0;
+        }
+        #grid-card{
+          width: 78%
+        }
+        .fadeEncabezado{
+          padding: 5vh;
+          margin-top: 20vh;
+          font-size: 5vh;
+        }
+        .fadeEncabezado2{
+            padding-left: 60vh;
+            margin-top: 47vh;
+            margin-right: auto;
+            color:#776C10;
+            background-color: rgba(255, 255, 255, .6);
+            font-size: 3.1vh;
+            font-family: 'Playfair Display', serif;
+            animation-name: fadeEncabezado2-Izq;
+            animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            animation-duration: 3s;
+      }
+      }
 @media (min-width: 918px)and (max-width: 1110px) {
                     .encabezado{
                       font-size: 7vh;
@@ -431,6 +460,21 @@
                         animation-duration: 3s;
             }
         }
+
+@media (min-width: 1910px)and (min-height: 1070px) {
+
+  #grid-card{
+    width: 70%;
+    height: 86vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
 
 @media (min-width: 412px)and (max-width: 734px)and (orientation: landscape){
   .encabezado{
